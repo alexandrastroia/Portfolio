@@ -31,8 +31,13 @@ $(document).ready(function () {
             return false;
         }
 
+        else if (email.length == ""){
+            $("#p3").text("Please enter yout email");
+            $("#email").focus();
+            return false;
+        }
+
         else if (!validateEmail(email)) {
-            console.log(1);
             $("#p2").text("Please enter a valid email");
             $("#email").focus();
             return false;
@@ -45,7 +50,7 @@ $(document).ready(function () {
         }
 
         else {
-            alert("Thank you for you're message. You'll get a response in 24H!");
+            alert("Thank you for your message. You'll get a response in 24H!");
             return true;
         }
     })
