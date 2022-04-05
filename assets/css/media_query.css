@@ -1,0 +1,129 @@
+/* === MEDIUM SCREEN === */
+@media only screen and (min-width:768px) and (max-width:992px){
+
+    /*-- NAVBAR --*/
+    .navbar .container button{
+        margin-right: -1.2em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+
+    /*--ABOUT--*/
+   .about .container img,
+   .about .container .summary{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:0;
+    margin-bottom:10px;
+   }
+
+   .about .container h1{
+       padding-top: 1em;
+       text-align: center;
+
+   }
+
+    /*--SKILL--*/
+    .skill img{
+        width:100%;
+    }
+
+    /*--PROJECTS--*/
+    .projects .item{
+        margin-bottom:1em;
+    }
+
+    /*--CONTACT--*/
+    .contact .container h1{
+        text-align: center;
+    }
+
+    .contact .container p{
+        padding-bottom: 1em;
+    }
+}
+
+
+/* === SMALL and EXTRA SMALL SCREEN === */
+@media only screen and (max-width:767px){
+
+    /*-- MAIN* --*/
+    .main h1{
+        font-size: 6em ;
+    }
+
+    .main h6{
+        font-size:1em ;
+    }
+
+    .main{
+        height:90vh;
+    }
+
+    /*-- ABOUT --*/
+    .about .container{
+        height: auto;
+    }
+
+    .about .container img{
+        display: block;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about h1{
+        font-size: 35px;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .about .summary{
+        margin-left: 0.5em;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    /*--SKILL--*/
+    .skill img{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*--PROJECTS--*/
+    .projects .container{
+        padding:2em;
+        padding-bottom:0;
+    }
+
+    .projects h1{
+        font-size:35px;
+
+    }
+
+    .projects .item{
+       margin-bottom:0.8em;
+    }
+
+    /*--CONTACT--*/
+    .contact .container{
+        padding:1em 2em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+    }
+    .contact .container h1{
+        font-size:35px;
+        text-align: center;
+    }
+
+    .contact .container p{
+        font-size: 1em;
+        padding-bottom: 1em;
+    }
+}
