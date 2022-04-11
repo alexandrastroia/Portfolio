@@ -55,20 +55,4 @@ $(document).ready(function () {
         }
     })
 
-
-    /** SEND EMAIL FROM THE FORM**/
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "stroia.alexandra@gmail.com",
-            Password : "password",
-            To : 'stroia.alexandra@gmail.com',
-            From : $("#email").val(),
-            Subject : "Email from my personal website",
-            Body : "Name: " + $("#name").val() + "<br> Email: " + $("#email").val() + "<br> Message: " + $("#msg").val()
-        }).then(
-          message => alert("Thank you for your message. You'll get a response in 24H!")
-        );
-    } 
-
 });
