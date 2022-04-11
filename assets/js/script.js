@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /** BUTTON SCROLLING **/
+    /** BUTTON ON CLICK SCROLLING **/
     $("#pulsante1").click(function () {
         $('html,body').animate({
             scrollTop: $("#projects").offset().top
@@ -32,7 +32,7 @@ $(document).ready(function () {
         }
 
         else if (email.length == ""){
-            $("#p3").text("Please enter yout email");
+            $("#p2").text("Please enter your email");
             $("#email").focus();
             return false;
         }
@@ -54,5 +54,21 @@ $(document).ready(function () {
             return true;
         }
     })
+
+
+    /** SEND EMAIL FROM THE FORM**/
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "stroia.alexandra@gmail.com",
+            Password : "password",
+            To : 'stroia.alexandra@gmail.com',
+            From : $("#email").val(),
+            Subject : "Email from my personal website",
+            Body : "Name: " + $("#name").val() + "<br> Email: " + $("#email").val() + "<br> Message: " + $("#msg").val()
+        }).then(
+          message => alert("Thank you for your message. You'll get a response in 24H!")
+        );
+    } 
 
 });
