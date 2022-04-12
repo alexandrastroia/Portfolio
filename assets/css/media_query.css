@@ -8,6 +8,10 @@
         margin-bottom: 0.7em;
     }
 
+    .navbar .container{
+        max-width: 690px;
+    }
+
     /*--ABOUT--*/
    .about .container img,
    .about .container .summary{
@@ -47,6 +51,11 @@
 
 /* === SMALL and EXTRA SMALL SCREEN === */
 @media only screen and (max-width:767px){
+    
+     /*-- NAVBAR --*/
+    .navbar .container .navbar-toggler{
+        margin-right: 0.5em;
+    }
 
     /*-- MAIN* --*/
     .main h1{
